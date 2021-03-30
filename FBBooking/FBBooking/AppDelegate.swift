@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let merchantVC = MerchantsViewController()
         
         let pulleyVC = PulleyViewController(contentViewController: mainVC, drawerViewController: merchantVC)
-//        window?.rootViewController = UINavigationController(rootViewController: pulleyVC)
+        window?.rootViewController = UINavigationController(rootViewController: pulleyVC)
         
-        window?.rootViewController = UINavigationController(rootViewController: ScheduleApptViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: ScheduleApptViewController())
         window?.makeKeyAndVisible()
         
         return true
