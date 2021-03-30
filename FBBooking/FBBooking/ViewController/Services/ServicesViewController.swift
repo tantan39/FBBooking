@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Presentr
+import Pulley
 
 class ServicesViewController: BaseViewController {
     
@@ -28,6 +30,7 @@ class ServicesViewController: BaseViewController {
     override func setupUIComponents() {
         self.navigationItem.title = TextManager.chooseService
         self.view.backgroundColor = .white
+        
         setupCategoryView()
         setupMainCollectionView()
     }
@@ -51,7 +54,7 @@ class ServicesViewController: BaseViewController {
     }
 }
 
-extension ServicesViewController: UICollectionViewDataSource {
+extension ServicesViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -62,6 +65,11 @@ extension ServicesViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.pulleyViewController?.setDrawerPosition(position: .open, animated: true)
     }
 }
 

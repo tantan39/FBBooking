@@ -11,5 +11,8 @@ class MainViewController: BaseViewController {
     override func setupUIComponents() {
         self.view.backgroundColor = .white
         self.navigationItem.title = "Home"
+        self.title = "Home"
+        
+        self.navigationController?.navigationBar.isHidden = true
     }
 }

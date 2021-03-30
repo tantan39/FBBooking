@@ -13,4 +13,5 @@ target 'FBBooking' do
  pod 'RxCocoa'
  pod 'Pulley'
  pod 'CocoaLumberjack/Swift'
+ pod 'Presentr'
 end

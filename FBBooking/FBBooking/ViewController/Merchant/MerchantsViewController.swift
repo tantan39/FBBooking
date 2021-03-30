@@ -83,9 +83,9 @@ extension MerchantsViewController: UICollectionViewDataSource {
 
 extension MerchantsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let rootVC = UIApplication.shared.windows.first?.rootViewController {
+        if let rootVC = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
             let servicesRoute = ServicesRoute()
-            servicesRoute.navigate(from: rootVC, transitionType: .push, animated: true)
+            servicesRoute.navigate(from: rootVC, transitionType: .present, animated: true)
         }
     }
 }
