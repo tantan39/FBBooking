@@ -6,19 +6,20 @@ Using:
 run "pod install" to install depedencies
 
 Completely Tasks:
-Merchants:
+
+- Merchants:
 https://github.com/tantan39/FBBooking/blob/master/Screenshorts/Merchants.png
 
-Services :
+- Services :
 https://github.com/tantan39/FBBooking/blob/master/Screenshorts/Services.png
 
-Staffs:
+- Staffs:
 https://github.com/tantan39/FBBooking/blob/master/Screenshorts/Staffs.png
 
-Schedule Appointment :
+- Schedule Appointment :
 https://github.com/tantan39/FBBooking/blob/master/Screenshorts/Schedule%20Appt.png
 
-Confirmation:
+- Confirmation:
 https://github.com/tantan39/FBBooking/blob/master/Screenshorts/Confirmation.png
 
 Incomplete Tasks:
