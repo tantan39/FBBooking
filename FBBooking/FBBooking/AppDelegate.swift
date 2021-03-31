@@ -16,16 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-//        let mainVC = UINavigationController(rootViewController: MainViewController())
-        let mainVC = MainViewController()
+        let mainVC = UINavigationController(rootViewController: MainViewController())
+//        let mainVC = MainViewController()
 
-        let merchantVC = UINavigationController(rootViewController: MerchantsViewController())
-//        let merchantVC = MerchantsViewController()
+//        let merchantVC = UINavigationController(rootViewController: MerchantsViewController())
+        let merchantVC = MerchantsViewController()
         
         let pulleyVC = PulleyViewController(contentViewController: mainVC, drawerViewController: merchantVC)
-        window?.rootViewController = UINavigationController(rootViewController: pulleyVC)
         
-//        window?.rootViewController = UINavigationController(rootViewController: ScheduleApptViewController())
+        window?.rootViewController = pulleyVC
+
         window?.makeKeyAndVisible()
         
         return true

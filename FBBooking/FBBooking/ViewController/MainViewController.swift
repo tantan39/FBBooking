@@ -13,6 +13,6 @@ class MainViewController: BaseViewController {
         self.navigationItem.title = "Home"
         self.title = "Home"
         
-        self.navigationController?.navigationBar.isHidden = true
+//        self.navigationController?.navigationBar.isHidden = true
     }
 }

@@ -12,7 +12,7 @@ class StaffsViewController: BaseViewController, PulleyDrawerViewControllerDelega
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = TextManager.chooseStaff
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textAlignment = .center
         return label
     }()

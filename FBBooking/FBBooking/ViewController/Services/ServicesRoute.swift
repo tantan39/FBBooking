@@ -14,6 +14,7 @@ class ServicesRoute: Router {
         let staffVC = StaffsViewController()
         
         let pulleyVC = PulleyViewController(contentViewController: UINavigationController(rootViewController: servicesVC), drawerViewController: staffVC)
+//        let pulleyVC = PulleyViewController(contentViewController: servicesVC, drawerViewController: staffVC)
 //        pulleyVC.setDrawerPosition(position: .closed, animated: true)
 //        
 //        pulleyVC.initialDrawerPosition = .closed

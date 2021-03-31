@@ -9,6 +9,21 @@ import UIKit
 import SnapKit
 import Pulley
 class MerchantsViewController: BaseViewController {
+    
+    lazy var toggleImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "Grabber"))
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = TextManager.chooseMerchant
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.textAlignment = .center
+        return label
+    }()
+    
     lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.placeholder = "Search"
@@ -30,25 +45,40 @@ class MerchantsViewController: BaseViewController {
     
     override func setupUIComponents() {
         super.setupUIComponents()
-        
-        self.navigationItem.title = TextManager.chooseMerchant
-        
-//        setupSearchBar()
+        self.view.backgroundColor = .white
+        setupToggle()
+        setupTitleLabel()
+        setupSearchBar()
         setupCollectionView()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationItem.hidesBackButton = true
+    override func viewWillAppear(_ animated: Bool) {
+        if let pulley = self.pulleyViewController {
+            pulley.setDrawerPosition(position: .open, animated: true)
+        }
+    }
+    
+    public func setupToggle() {
+        self.view.addSubview(self.toggleImageView)
+        self.toggleImageView.snp.makeConstraints { (maker) in
+            maker.top.equalToSuperview().offset(Dimension.shared.normalVerticalMargin)
+            maker.centerX.equalToSuperview()
+            maker.height.equalTo(3)
+        }
+    }
+
+    private func setupTitleLabel() {
+        self.view.addSubview(self.titleLabel)
+        self.titleLabel.snp.makeConstraints { (maker) in
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(self.toggleImageView.snp.bottom).offset(Dimension.shared.mediumVerticalMargin)
+        }
     }
     
     private func setupSearchBar() {
         self.view.addSubview(self.searchBar)
         self.searchBar.snp.makeConstraints { (maker) in
-            if #available(iOS 11.0, *) {
-                maker.top.equalTo(self.view.safeAreaInsets.top + 84)
-            } else {
-                maker.top.equalTo(self.topLayoutGuide.snp.bottom)
-            }
+            maker.top.equalTo(self.titleLabel.snp.bottom).offset(Dimension.shared.mediumVerticalMargin)
             maker.leading.trailing.equalToSuperview()
             maker.height.equalTo(40)
         }
@@ -58,8 +88,9 @@ class MerchantsViewController: BaseViewController {
     private func setupCollectionView() {
         self.view.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { (maker) in
-//            maker.top.equalTo(self.searchBar.snp.bottom)
-            maker.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+            maker.top.equalTo(self.searchBar.snp.bottom).offset(Dimension.shared.smallButtonHeight)
+//            maker.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+            
             maker.leading.trailing.bottom.equalToSuperview()
         }
         
@@ -83,9 +114,10 @@ extension MerchantsViewController: UICollectionViewDataSource {
 
 extension MerchantsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let rootVC = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
+        if let pulley = self.pulleyViewController {
             let servicesRoute = ServicesRoute()
-            servicesRoute.navigate(from: rootVC, transitionType: .present, animated: true)
+            pulley.setDrawerPosition(position: .collapsed, animated: true)
+            servicesRoute.navigate(from: self.pulleyViewController?.primaryContentViewController, transitionType: .present, animated: true)
         }
     }
 }
@@ -101,11 +133,11 @@ extension MerchantsViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension MerchantsViewController: PulleyDrawerViewControllerDelegate {
-    func supportedDrawerPositions() -> [PulleyPosition] {
-        return [.open]
-    }
-    
-    
-    
-}
+//extension MerchantsViewController: PulleyDrawerViewControllerDelegate {
+//    func supportedDrawerPositions() -> [PulleyPosition] {
+//        return [.open]
+//    }
+//
+//
+//
+//}

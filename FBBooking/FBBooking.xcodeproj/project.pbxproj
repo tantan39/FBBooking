@@ -33,6 +33,9 @@
 		A7AAE5A22613D5CE0086CAA1 /* StaffCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5A12613D5CE0086CAA1 /* StaffCollectionViewCell.swift */; };
 		A7AAE5A62613DCD60086CAA1 /* ScheduleApptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5A52613DCD60086CAA1 /* ScheduleApptViewController.swift */; };
 		A7AAE5A92613DD6C0086CAA1 /* ScheduleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5A82613DD6C0086CAA1 /* ScheduleRoute.swift */; };
+		A7AAE5AC2613E58C0086CAA1 /* AddServicesCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5AB2613E58B0086CAA1 /* AddServicesCustomView.swift */; };
+		A7AAE5AF261401220086CAA1 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5AE261401220086CAA1 /* RoundedCornerButton.swift */; };
+		A7AAE5B2261403AD0086CAA1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5B1261403AD0086CAA1 /* UIColorExtension.swift */; };
 		D37060D9AD31991A24DFFE05 /* Pods_FBBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3D36CF0955D32876DEE04F /* Pods_FBBooking.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		A7AAE5A12613D5CE0086CAA1 /* StaffCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffCollectionViewCell.swift; sourceTree = "<group>"; };
 		A7AAE5A52613DCD60086CAA1 /* ScheduleApptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleApptViewController.swift; sourceTree = "<group>"; };
 		A7AAE5A82613DD6C0086CAA1 /* ScheduleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRoute.swift; sourceTree = "<group>"; };
+		A7AAE5AB2613E58B0086CAA1 /* AddServicesCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServicesCustomView.swift; sourceTree = "<group>"; };
+		A7AAE5AE261401220086CAA1 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
+		A7AAE5B1261403AD0086CAA1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				A7AAE546261384E80086CAA1 /* UICollectionViewExtension.swift */,
+				A7AAE5B1261403AD0086CAA1 /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -225,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				A7AAE5882613B1FD0086CAA1 /* CategoryCustomView.swift */,
+				A7AAE5AB2613E58B0086CAA1 /* AddServicesCustomView.swift */,
+				A7AAE5AE261401220086CAA1 /* RoundedCornerButton.swift */,
 			);
 			path = Customize;
 			sourceTree = "<group>";
@@ -377,7 +386,9 @@
 				A7AAE54A2613864F0086CAA1 /* Dimension.swift in Sources */,
 				A7AAE4EA26137AA80086CAA1 /* AppDelegate.swift in Sources */,
 				A7AAE5A22613D5CE0086CAA1 /* StaffCollectionViewCell.swift in Sources */,
+				A7AAE5AF261401220086CAA1 /* RoundedCornerButton.swift in Sources */,
 				A7AAE5892613B1FD0086CAA1 /* CategoryCustomView.swift in Sources */,
+				A7AAE5AC2613E58C0086CAA1 /* AddServicesCustomView.swift in Sources */,
 				A7AAE4EC26137AA80086CAA1 /* SceneDelegate.swift in Sources */,
 				A7AAE5A62613DCD60086CAA1 /* ScheduleApptViewController.swift in Sources */,
 				A7AAE547261384E80086CAA1 /* UICollectionViewExtension.swift in Sources */,
@@ -386,6 +397,7 @@
 				A7AAE58226139C140086CAA1 /* Merchant.swift in Sources */,
 				A7AAE59B2613C5180086CAA1 /* Services.swift in Sources */,
 				A7AAE5672613995D0086CAA1 /* ServiceItemCollectionViewCell.swift in Sources */,
+				A7AAE5B2261403AD0086CAA1 /* UIColorExtension.swift in Sources */,
 				A7AAE5852613B1210086CAA1 /* CategoryItemCollectionViewCell.swift in Sources */,
 				A7AAE5582613942E0086CAA1 /* ServicesViewController.swift in Sources */,
 				A7AAE5A92613DD6C0086CAA1 /* ScheduleRoute.swift in Sources */,

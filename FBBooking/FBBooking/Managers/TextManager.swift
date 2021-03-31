@@ -12,4 +12,12 @@ open class TextManager {
     public static var chooseService                                                = "Choose Service"
     public static var chooseStaff                                                 = "Choose staff"
     public static var scheduleAppt                                                 = "Schedule Appointment"
+    public static var chooseDateAndTime                                                 = "Choose date and time"
+
+    public static var service                                                 = "Service"
+    public static var addService                                                 = "Add Service"
+    public static var leaveANote                                                 = "Leave a note (optional)"
+    public static var bookNow                                                 = "Book now"
+
+    
 }

@@ -89,9 +89,9 @@ class MerchantItemCollectionViewCell: BaseCollectionViewCell {
     private func setupDescriptionLabel() {
         self.mainView.addSubview(self.descriptionLabel)
         self.descriptionLabel.snp.makeConstraints { (maker) in
-            maker.top.equalToSuperview().offset(Dimension.shared.normalVerticalMargin)
+            maker.top.equalToSuperview().offset(Dimension.shared.mediumVerticalMargin)
             maker.leading.equalTo(self.iconImageView.snp.trailing).offset(Dimension.shared.normalVerticalMargin)
-            maker.bottom.equalToSuperview().offset(-Dimension.shared.normalVerticalMargin)
+            maker.bottom.equalToSuperview().offset(-Dimension.shared.mediumVerticalMargin)
         }
     }
     

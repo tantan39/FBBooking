@@ -27,8 +27,8 @@ class CategoryItemCollectionViewCell: BaseCollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            self.titleLabel.textColor = isSelected ? .purple : .black
-            self.containerView.layer.borderColor  = isSelected ? UIColor.purple.cgColor : UIColor.lightGray.cgColor
+            self.titleLabel.textColor = isSelected ? .primary1 : .black
+            self.containerView.layer.borderColor  = isSelected ? UIColor.primary1.cgColor : UIColor.lightGray.cgColor
         }
     }
     
