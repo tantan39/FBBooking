@@ -5,7 +5,7 @@ Fastboy Booking App
 Using: 
 run "pod install" to install depedencies
 
-Completely Tasks:\n
+Completely Tasks:
 Merchants:
 https://github.com/tantan39/FBBooking/blob/master/Screenshorts/Merchants.png
 
