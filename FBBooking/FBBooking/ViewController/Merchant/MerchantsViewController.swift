@@ -88,7 +88,7 @@ class MerchantsViewController: BaseViewController {
     private func setupCollectionView() {
         self.view.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { (maker) in
-            maker.top.equalTo(self.searchBar.snp.bottom).offset(Dimension.shared.smallButtonHeight)
+            maker.top.equalTo(self.searchBar.snp.bottom).offset(Dimension.shared.normalVerticalMargin)
 //            maker.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
             
             maker.leading.trailing.bottom.equalToSuperview()

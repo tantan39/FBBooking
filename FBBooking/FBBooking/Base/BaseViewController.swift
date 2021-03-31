@@ -8,6 +8,7 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    public var indicator: ActivityIndicator = ActivityIndicator()
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -59,3 +60,4 @@ class BaseViewController: UIViewController {
         }
     }
 }
+

@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import SVProgressHUD
 
 class ScheduleApptViewController: BaseViewController {
     
@@ -52,8 +55,8 @@ class ScheduleApptViewController: BaseViewController {
         return textView
     }()
     
-    private let submitButton: RoundedCornerButton = {
-        let button = RoundedCornerButton()
+    private let submitButton: FBRoundedCornerButton = {
+        let button = FBRoundedCornerButton()
         button.backgroundColor = .primary1
         button.setTitleColor(UIColor.white, for: .normal)
         button.setTitle(TextManager.bookNow, for: .normal)
@@ -71,6 +74,21 @@ class ScheduleApptViewController: BaseViewController {
         setupAddServiceView()
         setupNoteTextView()
         setupSubmitButton()
+        
+        handleObservers()
+    }
+    
+    private func handleObservers() {
+        self.submitButton.rx.controlEvent(.touchUpInside).subscribe { [weak self] (_) in
+            guard let self = self else { return }
+            let confirmRouter = ConfirmationRoute()
+            SVProgressHUD.show()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+                SVProgressHUD.dismiss()
+                confirmRouter.navigate(from: self, transitionType: .present, animated: false)
+            }
+            
+        }
     }
     
     private func setupTitleLabel() {

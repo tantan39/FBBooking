@@ -34,8 +34,16 @@
 		A7AAE5A62613DCD60086CAA1 /* ScheduleApptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5A52613DCD60086CAA1 /* ScheduleApptViewController.swift */; };
 		A7AAE5A92613DD6C0086CAA1 /* ScheduleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5A82613DD6C0086CAA1 /* ScheduleRoute.swift */; };
 		A7AAE5AC2613E58C0086CAA1 /* AddServicesCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5AB2613E58B0086CAA1 /* AddServicesCustomView.swift */; };
-		A7AAE5AF261401220086CAA1 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5AE261401220086CAA1 /* RoundedCornerButton.swift */; };
+		A7AAE5AF261401220086CAA1 /* FBRoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5AE261401220086CAA1 /* FBRoundedCornerButton.swift */; };
 		A7AAE5B2261403AD0086CAA1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5B1261403AD0086CAA1 /* UIColorExtension.swift */; };
+		A7AAE5B926140F960086CAA1 /* ConfirmationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5B826140F960086CAA1 /* ConfirmationRoute.swift */; };
+		A7AAE5BC261411810086CAA1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5BB261411810086CAA1 /* ActivityIndicator.swift */; };
+		A7AAE5D72614160A0086CAA1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5D62614160A0086CAA1 /* UIViewExtension.swift */; };
+		A7AAE5DB26147C330086CAA1 /* BookingMerchantInfoCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5DA26147C330086CAA1 /* BookingMerchantInfoCustomView.swift */; };
+		A7AAE5DE261485300086CAA1 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5DD261485300086CAA1 /* CartManager.swift */; };
+		A7AAE5E1261486C40086CAA1 /* BookingItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5E0261486C40086CAA1 /* BookingItemCollectionViewCell.swift */; };
+		A7AAE60026148F0D0086CAA1 /* TotalCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5FF26148F0D0086CAA1 /* TotalCustomView.swift */; };
+		A7AAE60F261493BA0086CAA1 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE5B526140EE20086CAA1 /* ConfirmationViewController.swift */; };
 		D37060D9AD31991A24DFFE05 /* Pods_FBBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3D36CF0955D32876DEE04F /* Pods_FBBooking.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,8 +80,16 @@
 		A7AAE5A52613DCD60086CAA1 /* ScheduleApptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleApptViewController.swift; sourceTree = "<group>"; };
 		A7AAE5A82613DD6C0086CAA1 /* ScheduleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRoute.swift; sourceTree = "<group>"; };
 		A7AAE5AB2613E58B0086CAA1 /* AddServicesCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServicesCustomView.swift; sourceTree = "<group>"; };
-		A7AAE5AE261401220086CAA1 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
+		A7AAE5AE261401220086CAA1 /* FBRoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBRoundedCornerButton.swift; sourceTree = "<group>"; };
 		A7AAE5B1261403AD0086CAA1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A7AAE5B526140EE20086CAA1 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		A7AAE5B826140F960086CAA1 /* ConfirmationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationRoute.swift; sourceTree = "<group>"; };
+		A7AAE5BB261411810086CAA1 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A7AAE5D62614160A0086CAA1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A7AAE5DA26147C330086CAA1 /* BookingMerchantInfoCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMerchantInfoCustomView.swift; sourceTree = "<group>"; };
+		A7AAE5DD261485300086CAA1 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		A7AAE5E0261486C40086CAA1 /* BookingItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7AAE5FF26148F0D0086CAA1 /* TotalCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +178,7 @@
 		A7AAE50E26137E4C0086CAA1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A7AAE5B426140ECD0086CAA1 /* Confirmation */,
 				A7AAE5A42613DCB40086CAA1 /* Schedule Appointment */,
 				A7AAE59D2613C5B00086CAA1 /* Staffs */,
 				A7AAE57B26139B2B0086CAA1 /* Services */,
@@ -174,6 +191,7 @@
 		A7AAE530261380F80086CAA1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A7AAE5BB261411810086CAA1 /* ActivityIndicator.swift */,
 				A7AAE5312613810D0086CAA1 /* BaseViewController.swift */,
 				A7AAE5492613864F0086CAA1 /* Dimension.swift */,
 				A7AAE554261388F50086CAA1 /* BaseCollectionViewCell.swift */,
@@ -188,6 +206,7 @@
 			children = (
 				A7AAE546261384E80086CAA1 /* UICollectionViewExtension.swift */,
 				A7AAE5B1261403AD0086CAA1 /* UIColorExtension.swift */,
+				A7AAE5D62614160A0086CAA1 /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -196,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A7AAE54D2613877F0086CAA1 /* TextManager.swift */,
+				A7AAE5DD261485300086CAA1 /* CartManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -207,6 +227,7 @@
 				A7AAE5662613995D0086CAA1 /* ServiceItemCollectionViewCell.swift */,
 				A7AAE5842613B1210086CAA1 /* CategoryItemCollectionViewCell.swift */,
 				A7AAE5A12613D5CE0086CAA1 /* StaffCollectionViewCell.swift */,
+				A7AAE5E0261486C40086CAA1 /* BookingItemCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -233,7 +254,9 @@
 			children = (
 				A7AAE5882613B1FD0086CAA1 /* CategoryCustomView.swift */,
 				A7AAE5AB2613E58B0086CAA1 /* AddServicesCustomView.swift */,
-				A7AAE5AE261401220086CAA1 /* RoundedCornerButton.swift */,
+				A7AAE5AE261401220086CAA1 /* FBRoundedCornerButton.swift */,
+				A7AAE5DA26147C330086CAA1 /* BookingMerchantInfoCustomView.swift */,
+				A7AAE5FF26148F0D0086CAA1 /* TotalCustomView.swift */,
 			);
 			path = Customize;
 			sourceTree = "<group>";
@@ -253,6 +276,15 @@
 				A7AAE5A82613DD6C0086CAA1 /* ScheduleRoute.swift */,
 			);
 			path = "Schedule Appointment";
+			sourceTree = "<group>";
+		};
+		A7AAE5B426140ECD0086CAA1 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				A7AAE5B526140EE20086CAA1 /* ConfirmationViewController.swift */,
+				A7AAE5B826140F960086CAA1 /* ConfirmationRoute.swift */,
+			);
+			path = Confirmation;
 			sourceTree = "<group>";
 		};
 		D1015E163EAAE18B845D9BD9 /* Pods */ = {
@@ -378,30 +410,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AAE5D72614160A0086CAA1 /* UIViewExtension.swift in Sources */,
 				A7AAE5322613810D0086CAA1 /* BaseViewController.swift in Sources */,
+				A7AAE60F261493BA0086CAA1 /* ConfirmationViewController.swift in Sources */,
 				A7AAE55B2613943C0086CAA1 /* MainViewController.swift in Sources */,
 				A7AAE52E261380C50086CAA1 /* MerchantsViewController.swift in Sources */,
 				A7AAE57726139AA20086CAA1 /* Logging.swift in Sources */,
 				A7AAE555261388F50086CAA1 /* BaseCollectionViewCell.swift in Sources */,
+				A7AAE5DB26147C330086CAA1 /* BookingMerchantInfoCustomView.swift in Sources */,
 				A7AAE54A2613864F0086CAA1 /* Dimension.swift in Sources */,
 				A7AAE4EA26137AA80086CAA1 /* AppDelegate.swift in Sources */,
 				A7AAE5A22613D5CE0086CAA1 /* StaffCollectionViewCell.swift in Sources */,
-				A7AAE5AF261401220086CAA1 /* RoundedCornerButton.swift in Sources */,
+				A7AAE5E1261486C40086CAA1 /* BookingItemCollectionViewCell.swift in Sources */,
+				A7AAE5AF261401220086CAA1 /* FBRoundedCornerButton.swift in Sources */,
 				A7AAE5892613B1FD0086CAA1 /* CategoryCustomView.swift in Sources */,
 				A7AAE5AC2613E58C0086CAA1 /* AddServicesCustomView.swift in Sources */,
 				A7AAE4EC26137AA80086CAA1 /* SceneDelegate.swift in Sources */,
 				A7AAE5A62613DCD60086CAA1 /* ScheduleApptViewController.swift in Sources */,
 				A7AAE547261384E80086CAA1 /* UICollectionViewExtension.swift in Sources */,
+				A7AAE5DE261485300086CAA1 /* CartManager.swift in Sources */,
 				A7AAE57F26139B400086CAA1 /* ServicesRoute.swift in Sources */,
 				A7AAE54E2613877F0086CAA1 /* TextManager.swift in Sources */,
 				A7AAE58226139C140086CAA1 /* Merchant.swift in Sources */,
+				A7AAE5B926140F960086CAA1 /* ConfirmationRoute.swift in Sources */,
 				A7AAE59B2613C5180086CAA1 /* Services.swift in Sources */,
 				A7AAE5672613995D0086CAA1 /* ServiceItemCollectionViewCell.swift in Sources */,
 				A7AAE5B2261403AD0086CAA1 /* UIColorExtension.swift in Sources */,
 				A7AAE5852613B1210086CAA1 /* CategoryItemCollectionViewCell.swift in Sources */,
 				A7AAE5582613942E0086CAA1 /* ServicesViewController.swift in Sources */,
+				A7AAE60026148F0D0086CAA1 /* TotalCustomView.swift in Sources */,
 				A7AAE5A92613DD6C0086CAA1 /* ScheduleRoute.swift in Sources */,
 				A7AAE552261388820086CAA1 /* MerchantItemCollectionViewCell.swift in Sources */,
+				A7AAE5BC261411810086CAA1 /* ActivityIndicator.swift in Sources */,
 				A7AAE56A26139A0E0086CAA1 /* Router.swift in Sources */,
 				A7AAE59F2613C5CA0086CAA1 /* StaffsViewController.swift in Sources */,
 			);

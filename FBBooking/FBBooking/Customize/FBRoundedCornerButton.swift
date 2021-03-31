@@ -1,5 +1,5 @@
 //
-//  RoundedCornerButton.swift
+//  FBRoundedCornerButton.swift
 //  FBBooking
 //
 //  Created by Tan Tan on 3/30/21.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class RoundedCornerButton: UIButton {
+class FBRoundedCornerButton: UIButton {
     @IBInspectable open var corner: CGFloat = 5
     @IBInspectable open var borderWidth: CGFloat = 0
     @IBInspectable open var borderColor: UIColor?

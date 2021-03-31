@@ -18,6 +18,8 @@ open class TextManager {
     public static var addService                                                 = "Add Service"
     public static var leaveANote                                                 = "Leave a note (optional)"
     public static var bookNow                                                 = "Book now"
-
+    public static var confirmation                                                 = "Confirmation"
+    public static var total                                                 = "Total"
+    public static var backToHome                                                 = "Back to Home Screen"
     
 }
